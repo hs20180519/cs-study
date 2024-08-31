@@ -65,8 +65,7 @@
 
 # 04. System Call Interface의 역할
 
-![image](https://github.com/user-attachments/assets/364e07f5-76e4-4ba0-8e01-418aece3ed0d)
-
+![image](https://github.com/user-attachments/assets/135ec6df-3adc-4e80-a63c-60de81ca9bf8)
 
 커널 구성요소들이 존재하는 공간인 **Kernal Space**가 있고, 그 위에는 사용자가 수행하는 작업들이 존재하는 **User Space**가 있다.
 
