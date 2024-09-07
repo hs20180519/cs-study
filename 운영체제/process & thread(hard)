@@ -1,9 +1,8 @@
 
-
 # 01. 프로세스 제어 블록 (PCB)
 
 
-https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcjrby0%2FbtqIarikobp%2FwPTdGGKemxiT7XkXXEBdQ0%2Fimg.png
+![title](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcjrby0%2FbtqIarikobp%2FwPTdGGKemxiT7XkXXEBdQ0%2Fimg.png)   
 
 
 ## 정의
@@ -36,7 +35,7 @@ CPU 스케줄링 정보 (우선순위)
 
 # 02. 프로세스 상태 (State)
 
-https://itwiki.kr/images/thumb/d/da/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%83%81%ED%83%9C%EC%A0%84%EC%9D%B4%EB%8F%84.png/750px-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%83%81%ED%83%9C%EC%A0%84%EC%9D%B4%EB%8F%84.png
+![title](https://itwiki.kr/images/thumb/d/da/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%83%81%ED%83%9C%EC%A0%84%EC%9D%B4%EB%8F%84.png/750px-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4_%EC%83%81%ED%83%9C%EC%A0%84%EC%9D%B4%EB%8F%84.png)
 
 
 ### Created (생성)
