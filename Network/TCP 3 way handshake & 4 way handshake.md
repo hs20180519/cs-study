@@ -60,5 +60,24 @@ host a -> b L ACK 세그먼트 (호스트 b가 전송한 세그먼트에 대한 
 2. SYN : 연결을 수립하기 위한 비트
 3. FIN : 연결을 종료하기 위한 비트
 
-### 04. 문제 풀이
-// TODO : 추가
+## 04. 문제 풀이
+<img width="667" alt="image" src="https://github.com/user-attachments/assets/3cace832-4306-4b50-8702-a1c4cca2cefd">
+
+함께 풀어봐용
+
+<img width="562" alt="image" src="https://github.com/user-attachments/assets/512e4109-66d5-43b0-a10a-c21fbf90d7f3">
+
+SYN Flooding : DDos(Distributed Denial of Service)의 일종으로, TCP 3-way handshake 과정에서 발생하는 취약점을 악용한 공격 방식이다. 주로 서버가 많은 SYN 요청을 처리할 수 없게 만들어 정상적인 사용자에게 서비스를 제공하지 못하도록 하는 공격이다.   
+
+### SYN Flooding 공격 방식
+1. 공격자가 다수의 SYN 패킷을 전송 (가짜 IP주소)
+2. 서버가 SYN 요청에 응답
+3. ACK 응답이 오지 않음. 자원을 과도하게 할당하여 새로운 연결 처리가 어려워짐
+
+### SYN Flooding 해결 방식
+1. SYN 쿠키 사용 : 서버가 SYN-ACK 패킷을 보낼 때 클라이언트와의 연결 정보를 유지하지 않고, 쿠키 형태로 인코딩된 정보를 전송하는 방법
+2. SYN 요청 수 제한
+3. 방화벽 및 네트워크 장비 설정
+4. SYN-ACK 재전송 횟수 줄이기
+5. IP 블랙리스트 사용 : 공격 시도 IP 주소 차단
+
