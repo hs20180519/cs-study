@@ -10,6 +10,10 @@
 - **빠른 전송 속도**: 오버헤드가 적고 연결 설정 과정이 없기 때문에 TCP보다 전송 속도가 빠르다.
 
 # 03. UDP 헤더
+
+![title](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc7dJZd%2FbtsJHQsHhUF%2FjhOqhpFIKJQQkmpdX8bMSK%2Fimg.png
+)
+
 UDP 헤더는 고정된 8바이트로 구성되며, 아래 4가지 필드를 포함한다.
 - **소스 포트 (Source Port)**: 데이터를 보내는 쪽의 포트 번호
 - **목적지 포트 (Destination Port)**: 데이터를 받는 쪽의 포트 번호
