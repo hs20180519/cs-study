@@ -114,7 +114,7 @@
 - User-Agent: 요청을 시작하는 클라이언트 측의 프로그램
 - Referer: 클라이언트가 요청을 보낼 때 머무르고 있던 URL
 - Authorization: 인증 정보
-- 
+
 ![image (4)](https://github.com/user-attachments/assets/0bd169e1-f6b2-4b6e-a540-0cc201e4368c)
 
 **응답 메세지**
@@ -161,7 +161,7 @@
 
 <img width="697" alt="image (10)" src="https://github.com/user-attachments/assets/d3e2e81e-f836-4148-9a41-0e4578d88861">
 
-# 02.HTTPS(Hyper Text Transfer Protocol Secure)
+# 02. HTTPS(Hyper Text Transfer Protocol Secure)
 
 - http에 데이터 암호화가 추가된 프로토콜
 - SSL/TLS 프로토콜을 통해 암호화 수행
