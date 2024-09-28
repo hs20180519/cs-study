@@ -81,7 +81,7 @@
 - 최근 대중적으로 사용되는 http 버전(1.1 이상)은 지속 연결 기술을 제공
 - 비지속 연결에 비해 더 빠르게 여러 http 요청과 응답을 처리할 수 있음
 
-<img width="770" alt="image (1)" src="https://github.com/user-attachments/assets/59365bc5-3164-43d6-aa40-04547180b002">
+<img width="697" alt="image (1)" src="https://github.com/user-attachments/assets/59365bc5-3164-43d6-aa40-04547180b002">
 
 ## HTTP 메세지 구조
 
@@ -147,10 +147,10 @@
 
 ## HTTP 상태 코드
 
-<img width="716" alt="image (6)" src="https://github.com/user-attachments/assets/5ca28b36-75df-4504-8dc8-76ad6865e481">
+<img width="697" alt="image (6)" src="https://github.com/user-attachments/assets/5ca28b36-75df-4504-8dc8-76ad6865e481">
 <img width="697" alt="image (7)" src="https://github.com/user-attachments/assets/56db7a9b-e920-4cbe-ad41-2343860562cd">
-<img width="656" alt="image (8)" src="https://github.com/user-attachments/assets/1431c763-bac3-4695-889b-5564839111c2">
-<img width="1054" alt="image (9)" src="https://github.com/user-attachments/assets/1790d4cf-5104-4eb5-bbf5-80039aaaccd2">
+<img width="697" alt="image (8)" src="https://github.com/user-attachments/assets/1431c763-bac3-4695-889b-5564839111c2">
+<img width="697" alt="image (9)" src="https://github.com/user-attachments/assets/1790d4cf-5104-4eb5-bbf5-80039aaaccd2">
 
 인증 vs. 인가(권한 부여)
 
@@ -159,7 +159,7 @@
 
 ⇒ 인증되지 않음(Unauthorized), 인가되지 않음(Forbidden)
 
-<img width="970" alt="image (10)" src="https://github.com/user-attachments/assets/d3e2e81e-f836-4148-9a41-0e4578d88861">
+<img width="697" alt="image (10)" src="https://github.com/user-attachments/assets/d3e2e81e-f836-4148-9a41-0e4578d88861">
 
 # 02.HTTPS(Hyper Text Transfer Protocol Secure)
 
