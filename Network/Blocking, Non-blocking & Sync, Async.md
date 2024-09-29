@@ -7,7 +7,7 @@
 - 가장 기본적인 I/O 모델, Linux에서의 모든 소켓 통신은 기본 Blocking으로 동작한다.
 - I/O 작업이 진행되는 동안 유저 프로세스는 자신의 작업을 중단한 채 대기하는 방식
 
-![image 1](https://github.com/user-attachments/assets/382d4e97-ac64-4d80-8cce-b01a0fc1cdcf)
+![image](https://github.com/user-attachments/assets/47030e64-9c59-4a3f-8433-9cda7d9a7623)
 
 ## 작업 흐름
 
@@ -25,7 +25,8 @@
 - 위의 blocking 방식의 비효율성을 극복하고자 도입된 방식
 - I/O 작업이 진행되는 동안 유저 프로세스의 작업을 중단시키지 않는 방식
 
-![image 2](https://github.com/user-attachments/assets/3c4fa056-f86f-4730-8419-84fc5c593ab5)
+![image 1](https://github.com/user-attachments/assets/382d4e97-ac64-4d80-8cce-b01a0fc1cdcf)
+
 
 ## 작업 흐름
 
@@ -84,7 +85,7 @@ Non-blocking 방식일 때 호출된 함수의 결과를 어떻게 확인하는�
 
 ⇒ Non-blocking ≠ Asynchronous
 
-![image](https://github.com/user-attachments/assets/47030e64-9c59-4a3f-8433-9cda7d9a7623)
+![image 2](https://github.com/user-attachments/assets/3c4fa056-f86f-4730-8419-84fc5c593ab5)
 
 1. 동기 Sync
 - A(호출한 함수)가 B(호출된 함수)를 기다리면서 B의 작업 상태를 계속 체크
