@@ -81,7 +81,7 @@ TCP 세그먼트는 **IP 패킷** 으로 캡슐화되며, 이 패킷은 라우�
 | 데이터 링크 계층(2계층)  | 물리적 네트워크 상에서 데이터 프레임을 전송      |
 | 물리 계층(1계층)         | 실제 전기 신호 또는 무선 신호로 데이터 전송    |
 
-
+![title](https://blog.kakaocdn.net/dn/bcSLU2/btsDKzjzPMw/dNJJLCsfpOL6P7B7HWXOY1/img.png)
 
 
 ## 07. https://www.naver.com을 브라우저에 입력하면 일어나는 일을 설명해주세요? 
