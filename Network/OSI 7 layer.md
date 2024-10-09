@@ -109,6 +109,20 @@ OSI 모델은 컴퓨터 네트워크 프로토콜과 통신을 일곱 개의 계
 - 표현 계층 (Presentation Layer): 데이터 형식 변환, 암호화, 압축 등 데이터 표현을 다룹니다.
 - 응용 계층 (Application Layer): 최종 사용자와 상호작용하는 응용 프로그램을 지원합니다.
 
+### TCP, UDP 가 어느 계층에서 사용되는지, 또 각각 차이점에 대해 설명해주세요.
+
+*TCP(Transmission Control Protocol)*는 연결 지향적 프로토콜입니다. 데이터 전송 전에 먼저 연결을 설정한 후 데이터를 송신하고, 데이터를 수신했는지 확인하는 과정을 거칩니다. 데이터의 신뢰성을 보장하며, 패킷이 손실되면 재전송하고 순서가 어긋나면 재정렬하는 기능을 가지고 있습니다. 예시로는 HTTP, FTP, 이메일 등이 있습니다.
+
+반면 *UDP(User Datagram Protocol)*는 비연결 지향적 프로토콜로, 연결 설정 없이 데이터를 빠르게 전송합니다. TCP와 달리 신뢰성은 보장하지 않으며 데이터가 손실되거나 순서가 바뀌어도 이를 확인하지 않습니다. 대신 전송 속도가 빠르며 네트워크 오버헤드가 적습니다. 예시로는 동영상 스트리밍, 온라인 게임 등이 있습니다.
+
+### 네트워크 계층에서 패킷이 전달되는 과정 중에 경로를 어떻게 결정하나요?
+
+네트워크 계층에서는 라우팅을 통해 패킷이 목적지에 도달하는 경로를 결정합니다. 각 패킷에는 출발지와 목적지 IP 주소가 포함되어 있으며, 이를 바탕으로 라우터가 경로를 선택합니다. 라우터는 여러 라우팅 알고리즘을 사용하여 경로를 결정합니다. 예를 들어:
+
+*고정 경로(Fixed Routing)*는 미리 정의된 경로를 사용하고,
+*동적 경로(Dynamic Routing)*는 실시간 네트워크 상태(예: 트래픽, 링크 상태 등)에 따라 최적 경로를 계산합니다. </br>
+대표적인 동적 라우팅 프로토콜에는 RIP(Routing Information Protocol), OSPF(Open Shortest Path First) 등이 있으며, OSPF는 네트워크 상태에 따라 최단 경로를 선택하여 패킷을 전달합니다.
+
 ### 참조
 
 - [https://www.cloudflare.com/ko-kr/learning/ddos/glossary/open-systems-interconnection-model-osi/](https://www.cloudflare.com/ko-kr/learning/ddos/glossary/open-systems-interconnection-model-osi/)
