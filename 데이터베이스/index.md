@@ -43,7 +43,7 @@ DBMS는 인덱스를 사용하는 것이 빠를지, 전체 테이블을 검색�
 
 ## 1. 클러스터형 인덱스 (Clustered Index)
 ![title]( https://hudi.blog/static/bb7fd0469e3eb38aa3cbacb8d3c27e13/02d09/clustered-index.png )
-- **기본 키(PK)**로 설정하면 자동으로 생성된다.
+- **기본 키(PK)** 로 설정하면 자동으로 생성된다.
 - **물리적으로 데이터가 정렬**되므로 조회 속도가 빠르다.
 - 테이블당 **1개**만 생성할 수 있다.
 - **데이터 입력, 수정, 삭제 시 정렬 상태**를 유지해야 하므로 속도가 느리다.
@@ -61,7 +61,7 @@ DBMS는 인덱스를 사용하는 것이 빠를지, 전체 테이블을 검색�
 ## 3. 고유 인덱스 (Unique Index)
 - 값이 **중복되지 않는 인덱스**로, **기본 키나 고유 키**로 지정된 컬럼에서 자동으로 생성된다.
 
-# 05. 종류, B-Tree와 B+Tree
+# 05. 종류
 
 ## 1. B-Tree
 ![title](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fy3nFx%2FbtrJp91qiHq%2FVkiki8GPrL2bbgBnsoJpoK%2Fimg.jpg)
