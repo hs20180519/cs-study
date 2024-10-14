@@ -279,15 +279,15 @@ AND if(LENGTH(password) = 3, sleep(5), false);
 
 ## Inner Join과 Outer Join의 차이를 설명해 주세요.
 
-- 중복이 없는 속성을 가지고 있는 테이블 A와 B를 join한다고 가정했을 때, inner join은 A와 B의 교집합을 추출하고 outer join은 A와 B의 합집합을 추출하는 방법입니다. inner join은 일치하는 값이 없는 튜플은 결과에 포함시키지 않고, outer join은 일치하지 않는 튜플도 결과에 포함시킨다는 차이가 있습니다.
+중복이 없는 속성을 가지고 있는 테이블 A와 B를 join한다고 가정했을 때, inner join은 A와 B의 교집합을 추출하고 outer join은 A와 B의 합집합을 추출하는 방법입니다. inner join은 일치하는 값이 없는 튜플은 결과에 포함시키지 않고, outer join은 일치하지 않는 튜플도 결과에 포함시킨다는 차이가 있습니다.
 
 ## SQL Injection이란 무엇인가요?
 
-- SQL Injection은 임의의 SQL문을 주입하고 실행되게 하여 데이터베이스가 비정상적인 동작을 하도록 조작하는 공격 기법입니다.
+SQL Injection은 임의의 SQL문을 주입하고 실행되게 하여 데이터베이스가 비정상적인 동작을 하도록 조작하는 공격 기법입니다.
 
 ## SQL Injection의 대응 방안에 대해 설명해 주세요.
 
-- SQL Injection 공격을 방지하기 위해서는 사전에 입력값을 검증하여 공격 가능성이 있는 구문이나 문자의 포함 여부를 검사하는 방법이 있습니다. 또는, 저장 프로시저를 사용하거나 매개변수화된 구문(Prepared Statement)를 사용할 수 있습니다.
+SQL Injection 공격을 방지하기 위해서는 사전에 입력값을 검증하여 공격 가능성이 있는 구문이나 문자의 포함 여부를 검사하는 방법이 있습니다. 또는, 저장 프로시저를 사용하거나 매개변수화된 구문(Prepared Statement)를 사용하여 방지할 수 있습니다.
 
 # 참고자료
 
