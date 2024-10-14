@@ -147,9 +147,9 @@ SELECT *
 FROM A RIGHT JOIN B;
 ```
 
-![image (5)](https://github.com/user-attachments/assets/295ef867-ca9d-463d-8d80-238eb884a765)
+![image (10)](https://github.com/user-attachments/assets/6db4c49d-a34a-4796-af6d-2bfb373e95e7)
 
-![image (6)](https://github.com/user-attachments/assets/e2530bea-4d3a-4f1d-9760-e427cffba66b)
+![image (5)](https://github.com/user-attachments/assets/295ef867-ca9d-463d-8d80-238eb884a765)
 
 # 03. SQL Injection
 
@@ -159,9 +159,9 @@ FROM A RIGHT JOIN B;
 
 ### Case 1. Where 구문 우회(쿼리 조건 무력화)
 
-![image (7)](https://github.com/user-attachments/assets/7311552d-1fd7-4bcb-b427-8907ef67ffc0)
-
 ![image (9)](https://github.com/user-attachments/assets/faf1a797-5411-4546-a4cc-3a8226dd52a8)
+
+![image (7)](https://github.com/user-attachments/assets/7311552d-1fd7-4bcb-b427-8907ef67ffc0)
 
 - 로그인 시 id 입력칸에 `admin’ or ‘1’=’1`을 입력한다면 아래와 같은 쿼리가 생성된다.
 
@@ -261,8 +261,7 @@ AND if(LENGTH(password) = 3, sleep(5), false);
 
 - 반복적으로 사용되는 SQL 쿼리를 데이터베이스에 준비해 두었다가,
 - 쿼리 실행에 필요한 값들만 매개변수로 전달하여 실행하는 방식
-- 외부에서 쿼리의 구조를 알 수 없고,
-- HTTP url의 어떤 매개변수가 쿼리의 어느 부분에 전달되는지 알 수 없음
+- 외부에서 쿼리의 구조를 알 수 없고 HTTP url의 어떤 매개변수가 쿼리의 어느 부분에 전달되는지 알 수 없음
 
 # 04. 자주 나오는 질문
 
