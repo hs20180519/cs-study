@@ -29,7 +29,7 @@
 
 ## DROP vs. TRUNCATE vs. DELETE
 
-|  | DELETE | TRUNCATE | DELETE |
+|  | DELETE | TRUNCATE | DROP |
 | --- | --- | --- | --- |
 | 명령어 종류 | DML | DDL | DDL |
 | 처리속도 | 느림 | 빠름 | 빠름 |
