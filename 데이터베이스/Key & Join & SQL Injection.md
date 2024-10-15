@@ -151,6 +151,12 @@ FROM A RIGHT JOIN B;
 
 ![image (5)](https://github.com/user-attachments/assets/295ef867-ca9d-463d-8d80-238eb884a765)
 
+**❓JOIN에서 ON과 WHERE의 차이는?**<br>
+필터링 시점의 차이이다.<br>
+ON: JOIN 전 필터링<br>
+WHERE: JOIN 후 필터링<br>
+
+
 # 03. SQL Injection
 
 - 보안상의 취약점을 이용하여, 임의의 SQL문을 주입하고 실행되게 하여 데이터베이스가 비정상적인 동작을 하도록 조작하는 공격 기법.
