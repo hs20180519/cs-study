@@ -5,16 +5,16 @@
 ### ArrayList
 
 ### (1) 배열로 생성
-<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="200" />
+<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="800" />
 
 
 ### (2) 사이즈 초과시 자동 grow
-<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="200" />
+<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="800" />
 
 
 
 ### (3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
-<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="200" />
+<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="800" />
 
 
 
