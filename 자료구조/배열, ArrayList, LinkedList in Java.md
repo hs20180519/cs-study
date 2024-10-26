@@ -6,15 +6,16 @@
 
 ### (1) 배열로 생성
 
-![image](https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8){: width="300"}
+![image](https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8){: width="300" height="200"}
 
 ### (2) 사이즈 초과시 자동 grow
-![image](https://github.com/user-attachments/assets/f75608eb-5bbf-4540-a620-451a8acd96b2){: width="300"}
+![image](https://github.com/user-attachments/assets/f75608eb-5bbf-4540-a620-451a8acd96b2){: width="300" height="200"}
 
 
 ### (3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
 
-![image](https://github.com/user-attachments/assets/8fadb12f-54dc-4dcd-a089-6f59a41cdd9d){: width="300"}
+![image](https://github.com/user-attachments/assets/8fadb12f-54dc-4dcd-a089-6f59a41cdd9d){: width="300" height="200"}
+
 
 
 ### LinkedList
@@ -204,34 +205,34 @@ public class ListAccessTest {
 </div>
 </details>
 
-## (1) 캐시 적중률(Cache Hit Rate)
+#### (1) 캐시 적중률(Cache Hit Rate)
 정렬된 데이터는 메모리 상에서 연속적인 위치에 배치될 가능성이 높다.
 예를 들어, 정렬된 배열은 메모리의 연속된 공간에 저장되므로, CPU 캐시에 로드된 데이터가 효율적으로 재사용될 수 있다.
 반면, 비정렬된 데이터는 메모리 상에서 무작위 위치에 저장되므로, 데이터를 조회할 때 CPU가 캐시에 없는 데이터를 계속해서 불러와야 할 가능성이 높다(Cache Miss). 
 
-(2) CPU의 프리패치(Pre-fetching)
+#### (2) CPU의 프리패치(Pre-fetching)
 CPU는 데이터 접근이 예상되는 연속적인 메모리 위치를 미리 가져오는 "프리패치" 기능을 사용하여 성능을 최적화한다.
 정렬된 데이터는 이러한 프리페치의 영향으로 빠르게 데이터를 조회할 수 있다.
 
-(3) 분기 예측(Branch Prediction)
+#### (3) 분기 예측(Branch Prediction)
 비정렬된 데이터의 경우, 특정 조건에 따라 데이터 조회 흐름이 예측되지 않기 때문에 분기 예측 실패(branch misprediction)가 발생할 가능성이 높다.
 * 분기 예측(Branch Prediction) : CPU에서 사용되는 기술. 프로그램의 흐름에서 분기 명령(예: if, switch, for 등)을 처리할 때 어떤 경로가 선택될지를 미리 예측하여 실행 성능을 향상시키는 방법
 
 
 ### ArrayList가 내부적으로 Array라면, 이 상황에서 조회성능에 차이가 나는 이유는 뭘까?
 
-(1) Integer 참조(포인터) 타입
+#### (1) Integer 참조(포인터) 타입
 
 ArrayList는 Object[] 배열을 통해 데이터를 관리하기 때문에, 배열의 각 요소가 객체(Object) 참조를 가리키는 포인터이다.
 반면, int[] 같은 기본 타입 배열은 실제 값들이 배열에 연속적으로 저장되므로, 메모리 접근이 더 빠르다.
 
-(2) 자동 박싱/언박싱(Auto-boxing/Unboxing)
+#### (2) 자동 박싱/언박싱(Auto-boxing/Unboxing)
 
 ArrayList<Integer> 같은 경우, 기본 타입인 int를 다룰 때마다 자동으로 Integer 객체로 변환(박싱)이 발생한다. 
 반대로 조회 시 Integer 객체가 int로 변환(언박싱)됩니다.
 이러한 박싱/언박싱에서의 오버헤드로 인해, 기본 타입 배열(int[])의 조회가 ArrayList<Integer>보다 빠르다
 
-(3) 추가적인 메서드 호출로 인한 오버헤드
+#### (3) 추가적인 메서드 호출로 인한 오버헤드
 
 ArrayList의 get(i) 메서드를 호출할 때마다 인덱스 범위 검사가 실행되는데, 이것이 오버헤드로 작용할 수 있다.
 반면, Array는 배열 인덱스로 직접 접근하므로 범위 검사가 따로 수행되지 않아서 더 빠르다.
@@ -382,9 +383,7 @@ public class ArrayTest {
 ![image](https://github.com/user-attachments/assets/db0b8e73-8fb7-42a7-af70-e46cd94f81a7)
 
 
+### 캐시 적중률로 인한 오버헤드 감소
 
-## 캐시 적중률로 인한 오버헤드 감소
-
-
-04. 참고
+# 04. 참고
 https://huilife.tistory.com/15
