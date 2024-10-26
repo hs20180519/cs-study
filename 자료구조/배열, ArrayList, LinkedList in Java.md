@@ -1,22 +1,23 @@
 # 01. Array, ArrayList, LinkedList 구현
-## Array
+### Array
 연속된 메모리 공간에 할당
 
-## ArrayList
-(1) 배열로 생성
+### ArrayList
+
+#### (1) 배열로 생성
 
 ![image](https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8)
 
-(2) 사이즈 초과시 자동 grow
+#### (2) 사이즈 초과시 자동 grow
 ![image](https://github.com/user-attachments/assets/f75608eb-5bbf-4540-a620-451a8acd96b2)
 
 
-(3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
+#### (3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
 
 ![image](https://github.com/user-attachments/assets/8fadb12f-54dc-4dcd-a089-6f59a41cdd9d)
 
 
-## LinkedList
+### LinkedList
 LinkedList는 ArrayList와 달리 배열이 아닌 **노드(Node)** 를 기반으로 구현되어 있다. 
 각 노드는 데이터와 함께 이전 노드와 다음 노드에 대한 참조를 가지고 있어, **양방향 연결 리스트(Double Linked List)** 형태로 구성된다
 
