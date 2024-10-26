@@ -4,10 +4,15 @@
 
 ## ArrayList
 (1) 배열로 생성
+
 ![image](https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8)
+
 (2) 사이즈 초과시 자동 grow
 ![image](https://github.com/user-attachments/assets/f75608eb-5bbf-4540-a620-451a8acd96b2)
+
+
 (3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
+
 ![image](https://github.com/user-attachments/assets/8fadb12f-54dc-4dcd-a089-6f59a41cdd9d)
 
 
