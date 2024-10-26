@@ -9,11 +9,13 @@
 <img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="600" />
 
 <br>
+
 **(2) 사이즈 초과시 자동 grow**
 
 <img src="https://github.com/user-attachments/assets/b412af1e-4ab6-4e72-b500-c0b889dfae56" width="600" />
 
 <br>
+
 **(3) grow** 
 
 <img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="600" />
