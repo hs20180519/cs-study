@@ -35,10 +35,7 @@ LinkedList는 ArrayList와 달리 배열이 아닌 **노드(Node)** 를 기반�
 | ArrayList |	O(1) |	O(N) (중간에 삽입) |	O(N) (중간에 삭제) |
 | LinkedList |	O(N) |	O(1) (앞/뒤에서) |	O(1) (앞/뒤에서) |
 
-<details>
-<summary>코드 보기</summary>
-<div markdown="1">
-	
+
 ``` java
 
 import java.util.ArrayList;
@@ -115,17 +112,11 @@ public class ListOperationTest {
 
 ```
 
-</div>
-</details>
 
 # 02. 정렬되지 않은 자료의 순차탐색 vs 정렬된 자료의 순차탐색
 
 결론부터 말하면, 시간복잡도는 같지만 캐시 적중 및 프리패치 매커니즘의 영향으로 유의미한 차이가 존재한다(정렬된 배열이 빠르다).
-   
-<details>
-<summary>코드보기</summary>
-<div markdown="1">
-  
+\
 ``` java
 
 import java.util.*;
@@ -206,9 +197,6 @@ public class ListAccessTest {
 <img src="https://github.com/user-attachments/assets/8a365098-dd51-4e29-a051-5763d0eab889" width="600" />
 
 
-</div>
-</details>
-
 **(1) 캐시 적중률(Cache Hit Rate)** 
 
 정렬된 데이터는 메모리 상에서 연속적인 위치에 배치될 가능성이 높다.
@@ -228,6 +216,20 @@ CPU는 데이터 접근이 예상되는 연속적인 메모리 위치를 미리 
 비정렬된 데이터의 경우, 특정 조건에 따라 데이터 조회 흐름이 예측되지 않기 때문에 분기 예측 실패(branch misprediction)가 발생할 가능성이 높다.
 
 * 분기 예측(Branch Prediction) : CPU에서 사용되는 기술. 프로그램의 흐름에서 분기 명령(예: if, switch, for 등)을 처리할 때 어떤 경로가 선택될지를 미리 예측하여 실행 성능을 향상시키는 방법
+
+
+### 정렬된 데이터가 메모리 상에서 연속적인 위치에 배치될 가능성이 높은 이유
+
+**(1) 정렬 알고리즘의 특성**
+
+대부분의 정렬 알고리즘(예: 퀵소트, 머지소트 등)은 데이터를 비교하고 교환하는 방식으로 작동한다. 
+이러한 과정에서 배열의 요소들이 서로 가까운 위치에 교환되거나, 이미 정렬된 구간을 기준으로 새로 추가된 데이터가 그 주변에 배치되게 된다. 
+결과적으로, 정렬된 데이터는 자연스럽게 연속적인 메모리 공간에 위치하게 된다.
+
+**(2) 캐시 지역성(Locality of Reference)**
+
+CPU 캐시의 효율성을 고려할 때, 정렬된 데이터는 메모리 접근 패턴에서 근접성을 유지하게 된다. 
+따라서 데이터가 연속적으로 저장되어 있으면 CPU가 다음에 접근할 데이터를 예측하기 쉬워져 캐시의 성능이 극대화된다. 이러한 캐시 지역성이 정렬된 데이터를 더욱 연속적으로 메모리에서 배치하도록 유도한다.
 
 
 ### ArrayList가 내부적으로 Array라면, 이 상황에서 조회성능에 차이가 나는 이유는 뭘까?
@@ -251,12 +253,6 @@ ArrayList<Integer> 같은 경우, 기본 타입인 int를 다룰 때마다 자�
 ArrayList의 get(i) 메서드를 호출할 때마다 인덱스 범위 검사가 실행되는데, 이것이 오버헤드로 작용할 수 있다.
 
 반면, Array는 배열 인덱스로 직접 접근하므로 범위 검사가 따로 수행되지 않아서 더 빠르다.
-
-<img src="https://github.com/user-attachments/assets/8a365098-dd51-4e29-a051-5763d0eab889" width="600" />
-
-<details>
-<summary>코드보기</summary>
-<div markdown="1">
 
 ``` java
 
@@ -339,18 +335,9 @@ public class ListAccessTest {
 <img src="https://github.com/user-attachments/assets/8a365098-dd51-4e29-a051-5763d0eab889" width="600" />
 
 
-</div>
-</details>
-
-
-
 
 # 03. 배열 횡우선검색 vs 열우선검색
    
-<details>
-<summary>코드 보기</summary>
-<div markdown="1">
-
 
 ``` java
 
