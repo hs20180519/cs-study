@@ -20,7 +20,7 @@
 LinkedList는 ArrayList와 달리 배열이 아닌 **노드(Node)** 를 기반으로 구현되어 있다. 
 각 노드는 데이터와 함께 이전 노드와 다음 노드에 대한 참조를 가지고 있어, **양방향 연결 리스트(Double Linked List)** 형태로 구성된다
 
-따라서 ArrayList는 조회에 유리하고, LinkedList는 삽입/삭제 작업에 유리한 구조로 설계되어 있습니다.
+따라서 ArrayList는 조회에 유리하고, LinkedList는 삽입/삭제 작업에 유리한 구조로 설계되어 있다.
 
 
 | 자료 구조	조회 | (Access) |	삽입 (Insert) |	삭제 (Delete) |
@@ -32,7 +32,9 @@ LinkedList는 ArrayList와 달리 배열이 아닌 **노드(Node)** 를 기반�
 <details>
 <summary>코드 보기</summary>
 <div markdown="1">
+	
 ``` java
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
@@ -104,6 +106,7 @@ public class ListOperationTest {
         System.out.println("LinkedList 중간 삭제 시간: " + (endTime - startTime) + " ns");
     }
 }
+
 ```
 
 </div>
@@ -118,6 +121,7 @@ public class ListOperationTest {
 <div markdown="1">
   
 ``` java
+
 import java.util.*;
 
 public class ListAccessTest {
@@ -234,6 +238,7 @@ ArrayList의 get(i) 메서드를 호출할 때마다 인덱스 범위 검사가 
 <div markdown="1">
 
 ``` java
+
 import java.util.*;
 
 public class ListAccessTest {
