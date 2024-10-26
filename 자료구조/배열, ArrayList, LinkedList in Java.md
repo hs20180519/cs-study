@@ -4,15 +4,15 @@
 
 ### ArrayList
 
-#### (1) 배열로 생성
+### (1) 배열로 생성
 
 ![image](https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8)
 
-#### (2) 사이즈 초과시 자동 grow
+### (2) 사이즈 초과시 자동 grow
 ![image](https://github.com/user-attachments/assets/f75608eb-5bbf-4540-a620-451a8acd96b2)
 
 
-#### (3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
+### (3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
 
 ![image](https://github.com/user-attachments/assets/8fadb12f-54dc-4dcd-a089-6f59a41cdd9d)
 
@@ -221,15 +221,18 @@ CPU는 데이터 접근이 예상되는 연속적인 메모리 위치를 미리 
 ### ArrayList가 내부적으로 Array라면, 이 상황에서 조회성능에 차이가 나는 이유는 뭘까?
 
 (1) Integer 참조(포인터) 타입
+
 ArrayList는 Object[] 배열을 통해 데이터를 관리하기 때문에, 배열의 각 요소가 객체(Object) 참조를 가리키는 포인터이다.
 반면, int[] 같은 기본 타입 배열은 실제 값들이 배열에 연속적으로 저장되므로, 메모리 접근이 더 빠르다.
 
 (2) 자동 박싱/언박싱(Auto-boxing/Unboxing)
+
 ArrayList<Integer> 같은 경우, 기본 타입인 int를 다룰 때마다 자동으로 Integer 객체로 변환(박싱)이 발생한다. 
 반대로 조회 시 Integer 객체가 int로 변환(언박싱)됩니다.
 이러한 박싱/언박싱에서의 오버헤드로 인해, 기본 타입 배열(int[])의 조회가 ArrayList<Integer>보다 빠르다
 
 (3) 추가적인 메서드 호출로 인한 오버헤드
+
 ArrayList의 get(i) 메서드를 호출할 때마다 인덱스 범위 검사가 실행되는데, 이것이 오버헤드로 작용할 수 있다.
 반면, Array는 배열 인덱스로 직접 접근하므로 범위 검사가 따로 수행되지 않아서 더 빠르다.
 ![image](https://github.com/user-attachments/assets/91dde9a9-1a72-4922-b79b-eafc6dc698ad)
@@ -382,51 +385,8 @@ public class ArrayTest {
 </div>
 </details>
 
-## 1. 캐시 적중률로 인한 오버헤드 감소
+## 2. 캐시 적중률로 인한 오버헤드 감소
 
 
-### 탐색 예시
-
-**Row-Major 탐색**
-
-1. 현재 cache: 비어 있음  
-   읽어야 하는 것: \( a_{11} \)  
-   Cache hit: X  
-
-2. 현재 cache: \( [a_{11}] \)  
-   읽어야 하는 것: \( a_{12} \)  
-   Cache hit: O  
-
-3. 현재 cache: \( [a_{11}, a_{12}] \)  
-   읽어야 하는 것: \( a_{13} \)  
-   Cache hit: O  
-
-4. 현재 cache: \( [a_{11}, a_{12}, a_{13}] \)  
-   읽어야 하는 것: \( a_{21} \)  
-   Cache hit: X  
-
-총 9번의 원소를 읽는 동안 3번의 cache miss, 6번의 cache hit이 발생한다.
-
-**Column-Major 탐색**
-
-1. 현재 cache: 비어 있음  
-   읽어야 하는 것: \( a_{11} \)  
-   Cache hit: X  
-
-2. 현재 cache: \( [a_{11}] \)  
-   읽어야 하는 것: \( a_{21} \)  
-   Cache hit: X  
-
-3. 현재 cache: \( [a_{11}, a_{21}] \)  
-   읽어야 하는 것: \( a_{31} \)  
-   Cache hit: X  
-
-4. 현재 cache: \( [a_{11}, a_{21}, a_{31}] \)  
-   읽어야 하는 것: \( a_{12} \)  
-   Cache hit: X  
-
-총 9번의 원소를 읽는 동안 cache miss가 9번 발생한다.
-
----
 04. 참고
 https://huilife.tistory.com/15
