@@ -382,10 +382,8 @@ public class ArrayTest {
 ![image](https://github.com/user-attachments/assets/db0b8e73-8fb7-42a7-af70-e46cd94f81a7)
 
 
-</div>
-</details>
 
-## 2. 캐시 적중률로 인한 오버헤드 감소
+## 캐시 적중률로 인한 오버헤드 감소
 
 
 04. 참고
