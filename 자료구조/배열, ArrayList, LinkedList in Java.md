@@ -6,15 +6,15 @@
 
 ### (1) 배열로 생성
 
-![image](https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8)
+![image](https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8){: width="300"}
 
 ### (2) 사이즈 초과시 자동 grow
-![image](https://github.com/user-attachments/assets/f75608eb-5bbf-4540-a620-451a8acd96b2)
+![image](https://github.com/user-attachments/assets/f75608eb-5bbf-4540-a620-451a8acd96b2){: width="300"}
 
 
 ### (3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
 
-![image](https://github.com/user-attachments/assets/8fadb12f-54dc-4dcd-a089-6f59a41cdd9d)
+![image](https://github.com/user-attachments/assets/8fadb12f-54dc-4dcd-a089-6f59a41cdd9d){: width="300"}
 
 
 ### LinkedList
@@ -204,7 +204,7 @@ public class ListAccessTest {
 </div>
 </details>
 
-(1) 캐시 적중률(Cache Hit Rate)
+## (1) 캐시 적중률(Cache Hit Rate)
 정렬된 데이터는 메모리 상에서 연속적인 위치에 배치될 가능성이 높다.
 예를 들어, 정렬된 배열은 메모리의 연속된 공간에 저장되므로, CPU 캐시에 로드된 데이터가 효율적으로 재사용될 수 있다.
 반면, 비정렬된 데이터는 메모리 상에서 무작위 위치에 저장되므로, 데이터를 조회할 때 CPU가 캐시에 없는 데이터를 계속해서 불러와야 할 가능성이 높다(Cache Miss). 
@@ -326,7 +326,7 @@ public class ListAccessTest {
 
 
 
-03. 배열 횡우선검색 vs 열우선검색
+# 03. 배열 횡우선검색 vs 열우선검색
    
 <details>
 <summary>코드 보기</summary>
