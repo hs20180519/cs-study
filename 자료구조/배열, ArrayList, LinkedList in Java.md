@@ -4,18 +4,17 @@
 
 ### ArrayList
 
-### (1) 배열로 생성
-<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="800" />
+**(1) 배열로 생성**
+<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="600" />
 
 
-### (2) 사이즈 초과시 자동 grow
-<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="800" />
+**(2) 사이즈 초과시 자동 grow**
+<img src="https://github.com/user-attachments/assets/b412af1e-4ab6-4e72-b500-c0b889dfae56" width="600" />
 
 
-
-### (3) grow - 새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
-<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="800" />
-
+**(3) grow** 
+<img src="https://github.com/user-attachments/assets/784577ec-dd42-4032-bf44-22ab0a8077c8" width="600" />
+새로운 Object[] 배열을 생성하고 기존 요소를 복사하는 방식으로 크기를 동적으로 조정
 
 
 ### LinkedList
@@ -199,44 +198,45 @@ public class ListAccessTest {
 }
 
 ```
+<img src="https://github.com/user-attachments/assets/8a365098-dd51-4e29-a051-5763d0eab889" width="600" />
 
-![image](https://github.com/user-attachments/assets/8a365098-dd51-4e29-a051-5763d0eab889)
 
 </div>
 </details>
 
-#### (1) 캐시 적중률(Cache Hit Rate)
+**(1) 캐시 적중률(Cache Hit Rate)** 
 정렬된 데이터는 메모리 상에서 연속적인 위치에 배치될 가능성이 높다.
 예를 들어, 정렬된 배열은 메모리의 연속된 공간에 저장되므로, CPU 캐시에 로드된 데이터가 효율적으로 재사용될 수 있다.
 반면, 비정렬된 데이터는 메모리 상에서 무작위 위치에 저장되므로, 데이터를 조회할 때 CPU가 캐시에 없는 데이터를 계속해서 불러와야 할 가능성이 높다(Cache Miss). 
 
-#### (2) CPU의 프리패치(Pre-fetching)
+**(2) CPU의 프리패치(Pre-fetching)**
 CPU는 데이터 접근이 예상되는 연속적인 메모리 위치를 미리 가져오는 "프리패치" 기능을 사용하여 성능을 최적화한다.
 정렬된 데이터는 이러한 프리페치의 영향으로 빠르게 데이터를 조회할 수 있다.
 
-#### (3) 분기 예측(Branch Prediction)
+**(3) 분기 예측(Branch Prediction)**
 비정렬된 데이터의 경우, 특정 조건에 따라 데이터 조회 흐름이 예측되지 않기 때문에 분기 예측 실패(branch misprediction)가 발생할 가능성이 높다.
 * 분기 예측(Branch Prediction) : CPU에서 사용되는 기술. 프로그램의 흐름에서 분기 명령(예: if, switch, for 등)을 처리할 때 어떤 경로가 선택될지를 미리 예측하여 실행 성능을 향상시키는 방법
 
 
 ### ArrayList가 내부적으로 Array라면, 이 상황에서 조회성능에 차이가 나는 이유는 뭘까?
 
-#### (1) Integer 참조(포인터) 타입
+**(1) Integer 참조(포인터) 타입**
 
 ArrayList는 Object[] 배열을 통해 데이터를 관리하기 때문에, 배열의 각 요소가 객체(Object) 참조를 가리키는 포인터이다.
 반면, int[] 같은 기본 타입 배열은 실제 값들이 배열에 연속적으로 저장되므로, 메모리 접근이 더 빠르다.
 
-#### (2) 자동 박싱/언박싱(Auto-boxing/Unboxing)
+**(2) 자동 박싱/언박싱(Auto-boxing/Unboxing)**
 
 ArrayList<Integer> 같은 경우, 기본 타입인 int를 다룰 때마다 자동으로 Integer 객체로 변환(박싱)이 발생한다. 
 반대로 조회 시 Integer 객체가 int로 변환(언박싱)됩니다.
 이러한 박싱/언박싱에서의 오버헤드로 인해, 기본 타입 배열(int[])의 조회가 ArrayList<Integer>보다 빠르다
 
-#### (3) 추가적인 메서드 호출로 인한 오버헤드
+**(3) 추가적인 메서드 호출로 인한 오버헤드**
 
 ArrayList의 get(i) 메서드를 호출할 때마다 인덱스 범위 검사가 실행되는데, 이것이 오버헤드로 작용할 수 있다.
 반면, Array는 배열 인덱스로 직접 접근하므로 범위 검사가 따로 수행되지 않아서 더 빠르다.
-![image](https://github.com/user-attachments/assets/91dde9a9-1a72-4922-b79b-eafc6dc698ad)
+
+<img src="https://github.com/user-attachments/assets/8a365098-dd51-4e29-a051-5763d0eab889" width="600" />
 
 <details>
 <summary>코드보기</summary>
@@ -319,7 +319,9 @@ public class ListAccessTest {
 }
 
 ```
-![image](https://github.com/user-attachments/assets/d2d41332-6a20-4349-9306-660d661f3bb3)
+
+<img src="https://github.com/user-attachments/assets/8a365098-dd51-4e29-a051-5763d0eab889" width="600" />
+
 
 </div>
 </details>
@@ -380,10 +382,22 @@ public class ArrayTest {
 
 ```
 
-![image](https://github.com/user-attachments/assets/db0b8e73-8fb7-42a7-af70-e46cd94f81a7)
+<img src="https://github.com/user-attachments/assets/db0b8e73-8fb7-42a7-af70-e46cd94f81a7" width="600" />
 
 
 ### 캐시 적중률로 인한 오버헤드 감소
+
+시간 복잡도는 행 우선 탐색과 열 우선 탐색 모두 동일하게 O(N×M)이다. 
+하지만 실제 실행 시간에서는 메모리 캐시 구조의 영향으로 행 우선 탐색이 더 빠르게 실행될 가능성이 높다
+
+**1. 행 우선 탐색 (Row-major order)**
+JAVA 기준, 이차원 배열은 메모리 상에서 행(row) 단위로 연속적으로 저장된다. 
+즉, 배열이 메모리에 배치될 때 [0][0], [0][1], [0][2] … [1][0], [1][1] 같은 순서로 저장된다.
+따라서 행 우선 탐색은 연속된 메모리 영역에 접근하기 때문에 캐시 적중률이 높다. 이는 캐시의 공간 지역성을 활용하여 더 빠르게 데이터를 가져올 수 있게 한다.
+
+**2. 열 우선 탐색 (Column-major order)**
+반면에 열 우선 탐색은 각 열을 먼저 순회하므로 메모리 상에서 불연속적인 주소에 접근하게 된다. 즉, [0][0], [1][0], [2][0] 같은 순서로 접근한다.
+이때는 캐시 적중률이 낮아지고, 캐시 미스가 발생하는 경우가 많아지기 때문에 실질적인 실행 시간이 느려질 수 있다.
 
 # 04. 참고
 https://huilife.tistory.com/15
