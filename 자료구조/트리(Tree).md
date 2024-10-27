@@ -56,8 +56,7 @@
 
 | 종류 | 설명 |
 | --- | --- |
-| Balanced(균형) | 지나치게 한쪽으로 치우치지 않았다면 Balanced Tree
-Left, Right 노드의 개수가 일치해야 할 필요는 없음 |
+| Balanced(균형) | 지나치게 한쪽으로 치우치지 않았다면 Balanced Tree <br/> Left, Right 노드의 개수가 일치해야 할 필요는 없음 |
 | Unbalanced(불균형) | 한쪽으로 지나치게 치우쳤다면 Unbalanced Tree |
 
 ### **편향 트리**
@@ -78,7 +77,7 @@ Left, Right 노드의 개수가 일치해야 할 필요는 없음 |
 | Binary Search Tree(이진 탐색 트리) | 왼쪽 자식과 그 이하 노드들의 데이터 < 부모 노드 데이터 < 오른쪽 자식과 그 이하 노드들의 데이터 |
 | Complete Binary Tree(완전 이진 트리) | 마지막 레벨을 제외한 모든 노드가 채워져 있어야 하며, 노드는 왼쪽에서 오른쪽 방향으로 채워져야 함 |
 | Full Binary Tree(정이진트리) | 모든 노드의 자식 노드가 2개이거나 0개 |
-| Perfect Binary Tree(포화 이진 트리) | 모든 노드의 자식 노드가 2개이고, 리프 노드가 모두 같은 레벨 높이가 h인 포화이진트리의 노드 개수는 2^(k+1)-1 |
+| Perfect Binary Tree(포화 이진 트리) | 모든 노드의 자식 노드가 2개이고, 리프 노드가 모두 같은 레벨 <br/> 높이가 h인 포화이진트리의 노드 개수는 2^(k+1)-1 |
 
 ## 다원 탐색 트리(Multiway Search Tree)
 
