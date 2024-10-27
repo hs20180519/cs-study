@@ -71,6 +71,7 @@ Left, Right 노드의 개수가 일치해야 할 필요는 없음 |
 
 <img width="762" alt="image (6)" src="https://github.com/user-attachments/assets/4e366a2e-c664-47e2-9329-411562958e3f">
 <img width="311" alt="image (7)" src="https://github.com/user-attachments/assets/a03eb71e-5a6a-4582-a065-e4c3c93eaf37">
+
 | 종류 | 설명 |
 | --- | --- |
 | Binary tree(이진 트리) | 자식 노드가 가지는 숫자의 기준이 없음(대소관계를 고려하지 않음) |
