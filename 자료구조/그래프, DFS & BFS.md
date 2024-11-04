@@ -84,3 +84,10 @@
 - 루트노드, 좌측노드, 모든 형제노드, 맨 처음 형제노드의 좌측노드 순으로 탐색 진행한다. <br>
 - 같은 계층을 먼저 탐색하다보니 형제노드들의 인접노드에 대한 정보들이 계속 Queue에 담겨있게 되어 메모리 효율이 떨어진다. <br>
 <img width="668" alt="image" src="https://github.com/user-attachments/assets/b3622659-2a7e-47d3-8ac5-5250494540ee">   
+
+## 06. 자주 나오는 질문
+### 1. 그래프의 종류와 각 종류의 특징   
+<img width="723" alt="image" src="https://github.com/user-attachments/assets/6d834915-1f03-41b8-9100-1e1253f2dccf">
+
+### 2. BFS와 DFS의 차이점, 장단점   
+<img width="695" alt="image" src="https://github.com/user-attachments/assets/2bcbc35a-8c82-4e58-8538-7be04cfafc9e">
