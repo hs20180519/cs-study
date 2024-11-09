@@ -238,6 +238,29 @@ private Node deleteRec(Node root, int key) {
 
 <img src="https://velog.velcdn.com/images/kku64r/post/02fd3f93-505c-4952-943c-d7d68692fcf6/image.jpg">
 
+
+## 원소 삽입
+<img srt="https://velog.velcdn.com/images/kku64r/post/e5bd439f-bdc4-48c0-ab78-6932200003c3/image.png">
+
+#### 1. 새로운 원소 삽입, 삽입하는 원소는 빨간색
+#### 2. Double Red 발생
+
+<img src="https://velog.velcdn.com/images/kku64r/post/eb45e7d9-7f8b-4b43-b7da-5919ef146268/image.png">
+
+#### 3. (1) 삼촌 노드가 검정색 -> Restructuring
+#### 3. (2) 삼촌 노드가 빨강색 -> ReColoring 
+
+**(1) Restructuring**
+<img src="https://velog.velcdn.com/images/kku64r/post/03125722-ea1a-47c8-a94f-e6a806d8cf29/image.png">
+
+**(2) ReColoring**
+<img src="https://velog.velcdn.com/images/kku64r/post/7a301b0b-f39f-444c-9b97-466a30f9864d/image.png">
+
+루트 노트가 Red 가 되면 Black으로 바꿔준다.
+
+#### 4. 균형을 맞출 때까지 반복
+
+
 ## 03. 비교
 
 ### 장단점
