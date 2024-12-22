@@ -100,6 +100,7 @@ CPU는 프로그램 실행을 위해 주기억장치에서 명령어를 순차�
 
 ![명령어 사이클](https://github.com/user-attachments/assets/e3d0cae8-7964-45eb-a20d-8ec97c3baad6)
 
+![명령어 기본 사이클](https://github.com/user-attachments/assets/86d2cf89-0510-472f-9400-9eeb4e316a7d)
 
 ### CPU 명령어 구성
 
