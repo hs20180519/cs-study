@@ -45,7 +45,7 @@
 2. interrupt 핸들링을 위해 ISR(Interrupt Service Routine)을 수행
     - ISR: interrupt 종류에 따라 처리하는 방식을 미리 정의한 프로그램
 3. 원래 수행하던 프로그램으로 돌아가 정상 동작
-    - 1. 에서 저장한 CPU의 정보를 다시 불러들이고, 원래 수행하던 프로그램으로 동작
+    - (1.) 에서 저장한 CPU의 정보를 다시 불러들이고, 원래 수행하던 프로그램으로 동작
     - CPU 입장에서는 자신이 interrupt를 처리했는지 의식하지 못함
 
 ![image (1)](https://github.com/user-attachments/assets/fea7122c-143d-4cb7-8239-f91d39ee47bb)
