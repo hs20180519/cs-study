@@ -1,5 +1,3 @@
-# Primitive Type & Reference Type
-
 # 00. Java의 데이터 타입
 
 Java에서는 크게 두 가지 데이터 타입으로 구분된다.
@@ -33,8 +31,8 @@ Java에서는 크게 두 가지 데이터 타입으로 구분된다.
 - ex) 문자 ‘A’의 유니코드는 65
 
 ```java
-char ch = 'A'; // 문자 'A'를 char타입의 변수 ch에 저장
-char ch = 65; // 문자의 코드를 직접 변수 ch에 저장
+char ch1 = 'A'; // 문자 'A'를 char타입의 변수 ch에 저장
+char ch2 = 65; // 문자의 코드를 직접 변수 ch에 저장
 ```
 
 ## byte
