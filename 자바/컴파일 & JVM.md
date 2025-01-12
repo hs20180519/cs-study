@@ -54,7 +54,7 @@
 **계층 구조**
 
 - 클래스 로더끼리 부모-자식 관계를 이루어 계층 구조로 생성됨
-- 취상위: 부트스트랩 클래스 로더
+- 최상위: 부트스트랩 클래스 로더
 
 ![image (1)](https://github.com/user-attachments/assets/4b432dc9-bbbb-482d-8391-76c26717345d)
 
@@ -78,7 +78,7 @@
 - 각 클래스 로더들이 가지고 있는 공간
 - 로드된 클래스를 보관하는 용도
 - 위임 모델을 통해서 상위 클래스 로더를 확인할 때, 확인하는 공간이 네임스페이스
-- 식별자 역할을 하는 FQCN(Fully Qualified Class Name)이라는 게 있음
+- 식별자 역할을 하는 FQCN(Fully Qualified Class Name)를 가지고 있음
 
 ## 런타임 데이터 영역(Runtime Data Area)
 
