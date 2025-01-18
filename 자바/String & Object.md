@@ -1,5 +1,4 @@
-# 01. 문자열 클래스
-
+# 01. java.lang.String
 - string은 참조형 변수(reference type)로 분류
 
 ## string은 상수
