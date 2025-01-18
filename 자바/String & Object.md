@@ -140,7 +140,7 @@ System.out.println(internedStr1.equals(internedStr2)); // true
 - 자바의 모든 객체의 최상위 클래스
 - 클래스를 선언할 때 extends 키워드로 다른 클래스를 상속하지 않으면 암시적으로 object 클래스를 상속하게 됨
 
-→ 자바의 모든 클래스는 object 클래스의 자식이거나 자손 클래스
+    → 자바의 모든 클래스는 object 클래스의 자식이거나 자손 클래스
 
 - 필드 없음. 메소드로 구성되어 있음
 
