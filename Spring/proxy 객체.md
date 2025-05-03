@@ -198,11 +198,13 @@ public boolean equals(Object o) {
         → `getClass() != o.getClass()`
         
 - 그래서 보통 하던 것처럼 `getClass`를 비교하도록 `equals`를 override하면 안 된다는 것
-- 프록시는 원본 객체의 상속하기 때문에, `instanceof`는 통과하므로 동등성 비교가 가능해짐
+- 프록시는 원본 객체를 상속하기 때문에, `instanceof`는 통과하므로 동등성 비교가 가능해짐
 - `Objects.equals(id, team.id)`
     - team.id는 null이므로 getId()로 실제 값을 얻어야 함
 
 ```java
+// 고친 코드
+
 @Override
 public boolean equals(Object o) {
     if (this == o) {
