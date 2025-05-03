@@ -164,8 +164,6 @@ public final Serializable getIdentifier() {
 
 ## 프록시 객체의 비교
 
-equals
-
 - 요약: 비교할 때 `==` 말고 `instance of` 사용해야 함
 
 ```java
