@@ -44,6 +44,30 @@
 - `After-throwing` : 예외 발생 후
 - `Around` : 대상 메서드의 수행 전/후
 
+## Spring AOP 적용 불가능한 대상
+- `final class`
+- `final method`
+- `static method`
+- `private method`
+- `생성자`
+
+### 프록시 기반(Spring AOP)의 한계 때문
+- Spring AOP는 기본적으로 프록시 객체를 만들어서 메서드 호출을 가로채는 방식
+- 따라서 `final`클래스나 메소드는 상속 및 오버라이딩이 불가능하기 때문에 AOP 적용 불가
+- `static method`는 인스턴스 메소드가 아니라 프록시로 가로채기가 불가능
+- `private method`는 프록시가 호출하지 않음
+- `생성자`의 경우에도 프록시가 생성자를 감쌀 수 없음
+
+### 보완 ?
+- `final`, `static`, `생성자`, `private`등에 AOP를 적용하려면
+- AspectJ 같은 바이트코드 위빙 방식 필요
+- 또는 직접 `ProxyFactory`로 수동 설정하거나 `MethodInterceptor`등으로 low-level 조작 필요
+
+## Spring AOP 적용 가능한 대상
+- `public`또는 `protected`인스턴스 메서드
+- 인터페이스 기반 또는 클래스 기반(CGLIB)로 만들어진 빈의 메서드
+- 반드시 Spring Bean으로 등록된 대상
+
 # 05. 자주 나오는 질문
 ### 1. Filter, Interceptor, AOP의 차이점
 <img width="486" alt="image" src="https://github.com/user-attachments/assets/deeea4bc-e47f-4c88-a2e9-e31cc13bceae" />
